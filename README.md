@@ -1,3 +1,7 @@
+# Polakrit Malimai
+
+[Contribution guidelines for this project](docs/CONTRIBUTING.md)
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
