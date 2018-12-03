@@ -1,6 +1,6 @@
 # Polakrit Malimai
 
-[Contribution guidelines for this project](docs/CONTRIBUTING.md)
+[![Build Status]
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
