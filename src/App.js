@@ -6,10 +6,12 @@ import { Provider } from "react-redux";
 import store from "./store";
 
 import AppNavbar from "./components/layout/AppNavbar";
-import Dashboard from "./components/layout/Dashboard";
+import Device from "./components/layout/Device";
 import AddClient from "./components/clients/AddClient";
 import ClientDetails from "./components/clients/ClientDetails";
 import Login from "./components/auth/Login";
+
+import Dashboard from "./components/layout/Dashboard";
 
 import { UserIsAuthenticated, UserIsNotAuthenticated } from "./helpers/auth";
 
@@ -24,8 +26,8 @@ class App extends Component {
               <Switch>
                 <Route
                   exact
-                  path="/"
-                  component={UserIsAuthenticated(Dashboard)}
+                  path="/device"
+                  component={UserIsAuthenticated(Device)}
                 />
                 <Route
                   exact
@@ -36,6 +38,11 @@ class App extends Component {
                   exact
                   path="/client/:id"
                   component={UserIsAuthenticated(ClientDetails)}
+                />
+                <Route
+                  exact
+                  path="/dashboard"
+                  component={UserIsAuthenticated(Dashboard)}
                 />
                 <Route
                   exact

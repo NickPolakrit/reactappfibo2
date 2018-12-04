@@ -26,7 +26,7 @@ class Clients extends Component {
 
   render() {
     const { clients } = this.props;
-    const { totalMc } = this.state;
+    const element = new Date().toLocaleTimeString();
 
     if (clients) {
       return (
@@ -43,7 +43,8 @@ class Clients extends Component {
                 Time :{" "}
                 <span className="text-primary">
                   {/* {parseFloat(totalMc).toFixed(2)} */}
-                  {new Date().toLocaleTimeString()}
+                  {/* {new Date().toLocaleTimeString()} */}
+                  {element}
                   {/* error Time */}
                 </span>
               </h5>
