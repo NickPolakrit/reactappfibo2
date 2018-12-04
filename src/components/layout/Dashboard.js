@@ -1,55 +1,16 @@
-import React, { Component } from "react";
-import Chart from "react-apexcharts";
+import React from "react";
+import PopChart from "../clients/PopChart";
 
-class Dashboard extends Component {
-  constructor(props) {
-    super(props);
-
-    this.state = {
-      options: {
-        chart: {
-          id: "basic-bar"
-        },
-        xaxis: {
-          categories: [1991, 1992, 1993, 1994, 1995, 1996, 1997, 1998, 1999]
-        }
-      },
-      series: [
-        {
-          name: "series-1",
-          data: [30, 40, 45, 50, 49, 60, 70, 91]
-        },
-        {
-          name: "series-2",
-          data: [40, 50, 55, 60, 59, 70, 60, 99]
-        }
-      ]
-    };
-  }
-
-  render() {
-    return (
-      <div
-        className="card border-primary mb-3 shadow-lg p-3 mb-5 bg-white rounded"
-        style={{ width: "550px" }}
-      >
-        <div className="card-body">
-          <div className="app">
-            <div className="row">
-              <div className="mixed-chart">
-                <Chart
-                  options={this.state.options}
-                  series={this.state.series}
-                  type="line"
-                  width="500"
-                />
-              </div>
-            </div>
-          </div>
-        </div>
+export default function Dashboard() {
+  return (
+    <div>
+      {/* <div className=" shadow-lg p-3 mb-5 bg-white rounded card border-info mb-3">
+        <h2 className="fas fa-tachometer-alt "> Dashboard</h2>
+      </div> */}
+      {/* <hr /> */}
+      <div>
+        <PopChart />
       </div>
-    );
-  }
+    </div>
+  );
 }
-
-export default Dashboard;

@@ -41,7 +41,7 @@ class App extends Component {
                 />
                 <Route
                   exact
-                  path="/dashboard"
+                  path="/"
                   component={UserIsAuthenticated(Dashboard)}
                 />
                 <Route
