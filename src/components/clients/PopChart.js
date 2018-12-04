@@ -1,23 +1,53 @@
 import React, { Component } from "react";
 import Chart from "react-apexcharts";
 
-class App extends Component {
+class PopChart extends Component {
   constructor(props) {
     super(props);
 
     this.state = {
       options: {
         chart: {
-          id: "basic-bar"
+          background: "#fff",
+          foreColor: "#373d3f",
+          sparkline: {
+            enabled: false
+          }
         },
+        dataLabels: {
+          enabled: false
+        },
+        stroke: {
+          curve: "smooth"
+        },
+
+        //------
         xaxis: {
-          categories: [1991, 1992, 1993, 1994, 1995, 1996, 1997, 1998]
+          type: "datetime",
+          categories: [
+            "2018-09-19T00:00:00",
+            "2018-09-19T01:30:00",
+            "2018-09-19T02:30:00",
+            "2018-09-19T03:30:00",
+            "2018-09-19T04:30:00",
+            "2018-09-19T05:30:00",
+            "2018-09-19T06:30:00"
+          ]
+        },
+        tooltip: {
+          x: {
+            format: "dd/MM/yy HH:mm"
+          }
         }
       },
       series: [
         {
-          name: "series-1",
-          data: [30, 40, 45, 50, 49, 60, 70, 91]
+          name: "series1",
+          data: [31, 40, 28, 51, 42, 109, 100]
+        },
+        {
+          name: "series2",
+          data: [11, 32, 45, 32, 34, 52, 41]
         }
       ]
     };
@@ -25,17 +55,15 @@ class App extends Component {
 
   render() {
     return (
-      <div
-        className="card border-primary mb-3 shadow-lg p-3 mb-5 bg-white rounded"
-        style={{ width: "100%" }}
-      >
+      <div className="app">
         <div className="row">
           <div className="mixed-chart">
             <Chart
               options={this.state.options}
               series={this.state.series}
-              type="bar"
+              type="area"
               width="200%"
+              height="450"
             />
           </div>
         </div>
@@ -44,4 +72,4 @@ class App extends Component {
   }
 }
 
-export default App;
+export default PopChart;
