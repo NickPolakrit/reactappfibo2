@@ -15,7 +15,7 @@ class Clients extends Component {
         <div>
           {clients.map(
             client => (
-              <i>{client.Name} </i>
+              <i> {client.Name} </i>
             )
             // <td>{client.Availability} </td>
             // <td>{client.Performance} </td>

@@ -8,12 +8,12 @@ import notifyReducer from "./reducers/notifyReducer";
 import settingsReducer from "./reducers/settingsReducer";
 
 const firebaseConfig = {
-  apiKey: "AIzaSyD-rB12o8XjlBhwLoYVj04l85iIj_29ZDk",
-  authDomain: "softdevfibo.firebaseapp.com",
-  databaseURL: "https://softdevfibo.firebaseio.com",
-  projectId: "softdevfibo",
-  storageBucket: "softdevfibo.appspot.com",
-  messagingSenderId: "34093292140"
+  apiKey: "AIzaSyDBBnr1wjndEwsB5mxgS1lrKe7EJRJqzbs",
+  authDomain: "sfsystem-d506e.firebaseapp.com",
+  databaseURL: "https://sfsystem-d506e.firebaseio.com",
+  projectId: "sfsystem-d506e",
+  storageBucket: "sfsystem-d506e.appspot.com",
+  messagingSenderId: "653079649278"
 };
 
 // react-redux-forebase config

@@ -26,7 +26,7 @@ class Clients extends Component {
 
   render() {
     const { clients } = this.props;
-    const element = new Date().toLocaleString();
+    const dateTime = new Date().toLocaleString();
 
     if (clients) {
       return (
@@ -44,13 +44,13 @@ class Clients extends Component {
                 <span className="text-primary">
                   {/* {parseFloat(totalMc).toFixed(2)} */}
                   {/* {new Date().toLocaleTimeString()} */}
-                  {element}
+                  {dateTime}
                   {/* error Time */}
                 </span>
               </h5>
             </div>
           </div>
-          <table className="table table-striped">
+          <table className="table table-striped table-responsive-xl">
             <thead className="thead-inverse">
               <tr>
                 <th>Name</th>
@@ -118,3 +118,5 @@ export default compose(
     clients: state.firestore.ordered.clients
   }))
 )(Clients);
+
+// setInterval(Clients, 1000);
