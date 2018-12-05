@@ -55,19 +55,18 @@ class PopChart extends Component {
 
   render() {
     return (
-      <div className="app">
+      <React.Fragment>
         <div className="row">
-          <div className="mixed-chart">
-            <Chart
-              options={this.state.options}
-              series={this.state.series}
-              type="area"
-              width="200%"
-              height="450"
-            />
-          </div>
+          <Chart
+            className="col-sm"
+            options={this.state.options}
+            series={this.state.series}
+            type="area"
+            width="90%"
+            height="450"
+          />
         </div>
-      </div>
+      </React.Fragment>
     );
   }
 }

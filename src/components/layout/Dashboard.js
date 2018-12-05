@@ -1,16 +1,23 @@
 import React from "react";
 import PopChart from "../clients/PopChart";
+import PopChart2 from "../clients/PopChart2";
+import PopChart3 from "../clients/PopChart3";
+import Ff from "../clients/Ff";
 
 export default function Dashboard() {
   return (
     <div>
-      <style>{"body { background-color: #EFF4F7; }"}</style>
+      <style>{"body { background-color: #EFF4F7; }  "}</style>
       {/* <div className=" shadow-lg p-3 mb-5 bg-white rounded card border-info mb-3">
         <h2 className="fas fa-tachometer-alt "> Dashboard</h2>
       </div> */}
       {/* <hr /> */}
-      <PopChart />
-      <div />
+      {/* <div className="col-sm " > */}
+      {/* <PopChart3 /> */}
+      {/* </div> */}
+      {/* <br /> */}
+      {/* <PopChart /> */}
+      <Ff />
     </div>
   );
 }

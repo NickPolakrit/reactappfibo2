@@ -48,7 +48,7 @@ class AddClient extends Component {
 
     firestore
       .add({ collection: "clients" }, newClient)
-      .then(() => history.push("/"));
+      .then(() => history.push("/device"));
   };
 
   onChange = e => this.setState({ [e.target.name]: e.target.value });
@@ -58,8 +58,8 @@ class AddClient extends Component {
       <div>
         <div className="row">
           <div className="col-md-6">
-            <Link to="/" className="btn btn-link">
-              <i className="fas fa-arrow-circle-left" /> Back To Dashboard
+            <Link to="/device" className="btn btn-link">
+              <i className="fas fa-arrow-circle-left" /> Back To Device
             </Link>
           </div>
         </div>
