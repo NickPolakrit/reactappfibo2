@@ -43,7 +43,7 @@ class AddClient extends Component {
       ).toFixed(2);
     }
     if (newClient.Time === "") {
-      newClient.Time = new Date().toLocaleTimeString();
+      newClient.Time = new Date().toLocaleString();
     }
 
     firestore

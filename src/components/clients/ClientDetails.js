@@ -16,9 +16,9 @@ class ClientDetails extends Component {
         <div>
           <div className="row">
             <div className="col-md-6">
-              <Link to="/" className="btn btn-link">
+              <Link to="/device" className="btn btn-link">
                 <i className="fas fa-arrow-circle-left fa-fw" />
-                Back To Dashboard
+                Back To Device
               </Link>
             </div>
             {/* <div className="col-md-6">

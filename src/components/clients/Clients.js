@@ -26,7 +26,7 @@ class Clients extends Component {
 
   render() {
     const { clients } = this.props;
-    const element = new Date().toLocaleTimeString();
+    const element = new Date().toLocaleString();
 
     if (clients) {
       return (
