@@ -75,7 +75,7 @@ class PopChart3 extends Component {
       <React.Fragment>
         <div className="row">
           <Chart
-            className="col-sm-auto"
+            className="col-md-auto"
             options={this.state.options}
             series={this.state.series1}
             type="line"

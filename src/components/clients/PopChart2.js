@@ -92,14 +92,16 @@ class PopChart2 extends Component {
 
   render() {
     return (
-      <Chart
-        className="col-sm-4"
-        options={this.state.options}
-        series={this.state.series}
-        type="radialBar"
-        // width="50%"
-        height="200"
-      />
+      <div className="row">
+        <Chart
+          className="col-md-auto"
+          options={this.state.options}
+          series={this.state.series}
+          type="radialBar"
+          // width="50%"
+          height="200"
+        />
+      </div>
     );
   }
 }

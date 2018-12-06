@@ -58,7 +58,7 @@ class PopChart extends Component {
       <React.Fragment>
         <div className="row">
           <Chart
-            className="col-sm"
+            className="col-xl"
             options={this.state.options}
             series={this.state.series}
             type="area"

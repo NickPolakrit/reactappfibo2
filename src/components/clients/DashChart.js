@@ -11,6 +11,7 @@ class DashChart extends Component {
   constructor(props) {
     super(props);
     this.state = {
+      arrlist: [],
       options: {
         chart: {
           id: "chart01",
@@ -71,7 +72,7 @@ class DashChart extends Component {
 
   render() {
     const { clients } = this.props;
-    let arr = [];
+
     if (clients) {
       return (
         // <div className="row">
@@ -86,10 +87,13 @@ class DashChart extends Component {
         // </div>
         // <div>store.firestore.get({{client.Name}}),</div>
         <div>
-          {clients.map(client =>
+          {clients.map(client => (
             // <i key={client.id}> {client.Name} </i>
-            arr.push(client.Name)
-          )}
+            <i key={client.id}> {client.Name}</i>
+          ))}
+          {clients.map(client => (
+            <i key={client.id}> {client.Performance} </i>
+          ))}
         </div>
       );
     } else {
