@@ -2,7 +2,7 @@ import React from "react";
 import PopChart from "../clients/PopChart";
 import PopChart2 from "../clients/PopChart2";
 import PopChart3 from "../clients/PopChart3";
-import Ff from "../clients/Ff";
+import DashChart from "../clients/DashChart";
 
 export default function Dashboard() {
   return (
@@ -13,11 +13,13 @@ export default function Dashboard() {
       </div> */}
       {/* <hr /> */}
       {/* <div className="col-sm " > */}
-      {/* <PopChart3 /> */}
+      {/* <div>
+        <PopChart3 />
+      </div> */}
       {/* </div> */}
       {/* <br /> */}
       {/* <PopChart /> */}
-      <Ff />
+      <DashChart />
     </div>
   );
 }
