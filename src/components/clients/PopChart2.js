@@ -94,7 +94,7 @@ class PopChart2 extends Component {
     return (
       <div className="row">
         <Chart
-          className="col-md-auto"
+          className="col-md-auto shadow-sm p-3 mb-5 bg-white rounded-0 border-bottom border-success"
           options={this.state.options}
           series={this.state.series}
           type="radialBar"

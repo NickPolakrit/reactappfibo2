@@ -33,9 +33,10 @@ class AppNavbar extends Component {
     const { auth } = this.props;
 
     return (
-      <nav className="navbar navbar-expand-md navbar-dark bg-primary mb-4">
+      <nav className="navbar navbar-expand-xl navbar-dark bg-primary mb-4">
+        {/* <nav className="navbar navbar-expand-xl navbar-dark bg-primary mb-4"> */}
         <div className="container">
-          <Link to="/" className="navbar-brand">
+          <Link to="/" className="navbar-brand ">
             SF System
           </Link>
           <button
@@ -50,15 +51,15 @@ class AppNavbar extends Component {
             <ul className="navbar-nav mr-auto">
               {isAuthenticated ? (
                 <li className="navbar-item">
-                  <Link to="/" className="nav-link">
-                    Dashboard
+                  <Link to="/" className="nav-link ">
+                    <i className="fas fa-tachometer-alt fa-fw" /> Dashboard
                   </Link>
                 </li>
               ) : null}
               {isAuthenticated ? (
                 <li className="navbar-item">
                   <Link to="/device" className="nav-link">
-                    Device
+                    <i className="fas fa-hdd fa-fw" /> Device
                   </Link>
                 </li>
               ) : null}
@@ -67,7 +68,7 @@ class AppNavbar extends Component {
               <ul className="navbar-nav ml-auto">
                 <li className="nav-item">
                   <a href="#!" className="nav-link">
-                    {auth.email}
+                    <i className="fas fa-user fa-fw" /> {auth.email}
                   </a>
                 </li>
                 <li className="nav-item">
@@ -76,6 +77,7 @@ class AppNavbar extends Component {
                     className="nav-link"
                     onClick={this.onLogoutClick}
                   >
+                    <i className="fas fa-sign-out-alt fa-fw" />
                     Logout
                   </a>
                 </li>
