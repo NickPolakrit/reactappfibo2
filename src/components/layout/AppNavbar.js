@@ -5,7 +5,7 @@ import { compose } from "redux";
 import { connect } from "react-redux";
 import { firebaseConnect } from "react-redux-firebase";
 import PropTypes from "prop-types";
-
+import Sflogo from "../layout/sflogo.png";
 class AppNavbar extends Component {
   state = {
     isAuthenticated: false
@@ -37,7 +37,14 @@ class AppNavbar extends Component {
         {/* <nav className="navbar navbar-expand-xl navbar-dark bg-primary mb-4"> */}
         <div className="container">
           <Link to="/" className="navbar-brand ">
-            SF System
+            {/* SF System */}
+            <img
+              src={Sflogo}
+              width="150"
+              height="40"
+              class="d-inline-block align-top"
+              alt=""
+            />
           </Link>
           <button
             className="navbar-toggler"

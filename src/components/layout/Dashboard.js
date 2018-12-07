@@ -18,10 +18,10 @@ export default function Dashboard() {
       </div> */}
       {/* </div> */}
       {/* <br /> */}
-      <PopChart />
+      {/* <PopChart />
       <PopChart2 />
-      <PopChart3 />
-      {/* <DashChart /> */}
+      <PopChart3 /> */}
+      <DashChart />
     </div>
   );
 }
