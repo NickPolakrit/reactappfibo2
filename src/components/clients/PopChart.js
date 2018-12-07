@@ -58,7 +58,7 @@ class PopChart extends Component {
       <React.Fragment>
         <div className="row">
           <Chart
-            className="col shadow p-3 mb-5 bg-white rounded-0 border border-success"
+            className="col shadow-lg p-3 mb-5 bg-white rounded border border-success"
             options={this.state.options}
             series={this.state.series}
             type="area"
