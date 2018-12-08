@@ -3,6 +3,7 @@ import PopChart from "../clients/PopChart";
 import PopChart2 from "../clients/PopChart2";
 import PopChart3 from "../clients/PopChart3";
 import DashChart from "../clients/DashChart";
+import DashChart2 from "../clients/DashChart2";
 
 export default function Dashboard() {
   return (
@@ -21,7 +22,7 @@ export default function Dashboard() {
       {/* <PopChart />
       <PopChart2 />
       <PopChart3 /> */}
-      <DashChart />
+      <DashChart2 />
     </div>
   );
 }

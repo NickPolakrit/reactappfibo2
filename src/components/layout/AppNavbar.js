@@ -33,7 +33,7 @@ class AppNavbar extends Component {
     const { auth } = this.props;
 
     return (
-      <nav className="navbar navbar-expand-xl navbar-dark bg-primary mb-4">
+      <nav className="navbar navbar-expand-xl navbar-dark bg-primary mb-4 sticky-top">
         {/* <nav className="navbar navbar-expand-xl navbar-dark bg-primary mb-4"> */}
         <div className="container">
           <Link to="/" className="navbar-brand ">
@@ -42,7 +42,7 @@ class AppNavbar extends Component {
               src={Sflogo}
               width="150"
               height="40"
-              class="d-inline-block align-top"
+              className="d-inline-block align-top"
               alt=""
             />
           </Link>

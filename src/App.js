@@ -12,6 +12,7 @@ import ClientDetails from "./components/clients/ClientDetails";
 import Login from "./components/auth/Login";
 
 import Dashboard from "./components/layout/Dashboard";
+import NotFound from "./components/pages/NotFound";
 
 import { UserIsAuthenticated, UserIsNotAuthenticated } from "./helpers/auth";
 
@@ -54,6 +55,7 @@ class App extends Component {
                   path="/login"
                   component={UserIsNotAuthenticated(Login)}
                 />
+                <Route component={UserIsAuthenticated(NotFound)} />
               </Switch>
             </div>
           </div>

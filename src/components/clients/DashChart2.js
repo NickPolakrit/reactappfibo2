@@ -10,13 +10,14 @@ import Chart from "react-apexcharts";
 class DashChart extends Component {
   constructor(props) {
     super(props);
+
     this.state = {
-      arrlist: [
-        {
-          name: "test",
-          data: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12]
-        }
-      ],
+      // arrlist: [
+      //   {
+      //     name: "test",
+      //     data: [1, 10]
+      //   }
+      // ],
       options: {
         chart: {
           id: "chart01",
@@ -96,19 +97,14 @@ class DashChart extends Component {
         // <React.Fragment>
         <div className="row">
           <Chart
-            className="col shadow-lg p-3 mb-5 bg-white rounded-0 border-bottom border-success"
+            className="col shadow p-3 mb-5 bg-white rounded border border-success"
             options={this.state.options}
-            series={this.state.arrlist}
-            // series={clients.client.Name}
+            series={this.state.date01}
+            // series={clients.Quality}
             type="line"
             width="100%"
             height="300"
           />
-          <a>
-            {clients.map(client => (
-              <a> {client.Quality} </a>
-            ))}
-          </a>
         </div>
         // </React.Fragment>
         // <div>

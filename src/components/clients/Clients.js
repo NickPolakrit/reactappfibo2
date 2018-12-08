@@ -31,7 +31,7 @@ class Clients extends Component {
     if (clients) {
       return (
         <div>
-          <div className="row">
+          <div className="row ">
             <div className="col-md-6">
               <h2>
                 {" "}

@@ -34,7 +34,7 @@ class Login extends Component {
     return (
       <div className="row">
         <div className="col-md-6 mx-auto">
-          <div className="card">
+          <div className="shadow-lg rounded border border-primary">
             <div className="card-body">
               {message ? (
                 <Alert message={message} messageType={messageType} />

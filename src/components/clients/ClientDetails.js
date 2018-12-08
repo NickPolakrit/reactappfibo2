@@ -31,7 +31,7 @@ class ClientDetails extends Component {
             </div> */}
           </div>
           <hr />
-          <div className="card">
+          <div className="card shadow-lg p-3 mb-5 bg-white rounded">
             <h3 className="card-header">
               {client.Name}
               {"  "}
