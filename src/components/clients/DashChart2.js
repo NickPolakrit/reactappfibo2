@@ -97,7 +97,7 @@ class DashChart extends Component {
         // <React.Fragment>
         <div className="row">
           <Chart
-            className="col shadow p-3 mb-5 bg-white rounded border border-success"
+            className="col shadow-lg p-3 mb-5 bg-white rounded "
             options={this.state.options}
             series={this.state.date01}
             // series={clients.Quality}

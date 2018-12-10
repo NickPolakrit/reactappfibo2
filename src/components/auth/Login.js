@@ -5,7 +5,7 @@ import { connect } from "react-redux";
 import { firebaseConnect } from "react-redux-firebase";
 import { notifyUser } from "../../actions/notifyActions";
 import Alert from "../layout/Alert";
-
+import Sflogo from "../layout/sflogo.png";
 class Login extends Component {
   state = {
     email: "",
@@ -70,7 +70,7 @@ class Login extends Component {
                 <input
                   type="submit"
                   value="Login"
-                  className="btn btn-primary btn-block"
+                  className="btn btn-outline-primary btn-block"
                 />
               </form>
             </div>

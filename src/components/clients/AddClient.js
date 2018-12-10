@@ -63,8 +63,8 @@ class AddClient extends Component {
             </Link>
           </div>
         </div>
-
-        <div className="card">
+        <hr />
+        <div className="card shadow-lg p-3 mb-5 bg-white rounded">
           <div className="card-header">Add Client</div>
           <div className="card-body">
             <form onSubmit={this.onSubmit}>
