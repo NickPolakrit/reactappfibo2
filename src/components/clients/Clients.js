@@ -118,5 +118,3 @@ export default compose(
     clients: state.firestore.ordered.clients
   }))
 )(Clients);
-
-// setInterval(Clients, 1000);
