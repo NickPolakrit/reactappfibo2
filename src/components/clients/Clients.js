@@ -59,9 +59,9 @@ class Clients extends Component {
               </h2>
             </div>
             <div className="col-md-6">
-              <h5 className="text-right text-secondary">
-                Time :{" "}
-                <span className="text-primary">
+              <h5 className="text-right text-secondary ">
+                Date/Time :{" "}
+                <span className="text-primary ">
                   {/* {parseFloat(totalMc).toFixed(2)} */}
                   {/* {new Date().toLocaleTimeString()} */}
                   {this.state.time}
