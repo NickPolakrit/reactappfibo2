@@ -6,6 +6,25 @@ import { connect } from "react-redux";
 import { firestoreConnect } from "react-redux-firebase";
 import Spinner from "../layout/Spinner";
 class Clients extends Component {
+  // ? -- time ---------------
+  constructor(props) {
+    super(props);
+    this.state = {
+      time: new Date().toLocaleString()
+    };
+  }
+  componentDidMount() {
+    this.intervalID = setInterval(() => this.tick(), 1000);
+  }
+  componentWillUnmount() {
+    clearInterval(this.intervalID);
+  }
+  tick() {
+    this.setState({
+      time: new Date().toLocaleString()
+    });
+  }
+  // ?-- Time --------------
   state = {
     totalMc: null
   };
@@ -26,7 +45,8 @@ class Clients extends Component {
 
   render() {
     const { clients } = this.props;
-    const dateTime = new Date().toLocaleString();
+    // const dateTime = new Date().toLocaleString();
+    // clearInterval(clients, 100);
 
     if (clients) {
       return (
@@ -44,7 +64,7 @@ class Clients extends Component {
                 <span className="text-primary">
                   {/* {parseFloat(totalMc).toFixed(2)} */}
                   {/* {new Date().toLocaleTimeString()} */}
-                  {dateTime}
+                  {this.state.time}
                   {/* error Time */}
                 </span>
               </h5>
