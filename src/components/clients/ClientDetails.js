@@ -52,7 +52,17 @@ class ClientDetails extends Component {
                 <div className="col-md-4 col-sm-6">
                   <button type="button" className="btn btn-success">
                     OEE{" "}
-                    <span className="badge badge-light"> {client.OEE} %</span>
+                    <span className="badge badge-light">
+                      {parseFloat(
+                        (((((parseFloat(client.Performance.toString()) / 100) *
+                          parseFloat(client.Availability.toString())) /
+                          100) *
+                          parseFloat(client.Quality.toString())) /
+                          100) *
+                          100
+                      ).toFixed(2)}
+                      %{" "}
+                    </span>
                   </button>
                 </div>
               </div>
