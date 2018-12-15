@@ -32,13 +32,13 @@ class Clients extends Component {
   static getDerivedStateFromProps(props, state) {
     const { clients } = props;
 
-    if (clients) {
-      const total = clients.reduce((total, client) => {
-        return total + parseFloat(client.OEE.toString()); // ERROR !!!!
-      }, 0);
+    // if (clients) {
+    //   const total = clients.reduce((total, client) => {
+    //     return total + parseFloat(client.OEE.toString()); // ERROR !!!!
+    //   }, 0);
 
-      return { totalMc: total };
-    }
+    //   return { totalMc: total };
+    // }
 
     return null;
   }
