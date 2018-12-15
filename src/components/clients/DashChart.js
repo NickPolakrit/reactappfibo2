@@ -1,7 +1,10 @@
 import React, { Component } from "react";
 import Chart from "react-apexcharts";
+import PropTypes from "prop-types";
+import { connect } from "react-redux";
+import { firestoreConnect } from "react-redux-firebase";
 
-class PopChart extends Component {
+class DashChart extends Component {
   constructor(props) {
     super(props);
 
@@ -54,6 +57,8 @@ class PopChart extends Component {
   }
 
   render() {
+    const { clients } = this.props;
+
     return (
       <React.Fragment>
         <div className="row">
@@ -71,4 +76,9 @@ class PopChart extends Component {
   }
 }
 
-export default PopChart;
+DashChart.propTypes = {
+  firestore: PropTypes.object.isRequired,
+  clients: PropTypes.array
+};
+
+export default DashChart;

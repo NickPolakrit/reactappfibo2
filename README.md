@@ -28,6 +28,12 @@ npm i classnames
 import React, { Component } from "react";
 ```
 
+## Usage Rest API ESP32
+
+```json
+https://firestore.googleapis.com/v1beta1/projects/sfsystem-d506e/databases/(default)/documents/clients
+```
+
 ## License
 
 ![Nick](https://img.shields.io/badge/License%20-KMUTT-green.svg?style=for-the-badge)

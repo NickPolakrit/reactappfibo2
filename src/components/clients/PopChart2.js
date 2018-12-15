@@ -83,6 +83,18 @@ class PopChart2 extends Component {
         stroke: {
           lineCap: "round"
         },
+        title: {
+          text: "OEE",
+          align: "left",
+          margin: 0,
+          offsetX: 10,
+          offsetY: 10,
+          floating: false,
+          style: {
+            fontSize: "16px",
+            color: "#263238"
+          }
+        },
         labels: ["Percent"]
         //------
       },
@@ -94,7 +106,7 @@ class PopChart2 extends Component {
     return (
       <div className="row">
         <Chart
-          className="col-md-auto shadow-sm p-3 mb-5 bg-white rounded-0 border-bottom border-success"
+          className="col-md-auto shadow-lg p-3 mb-5 bg-white rounded-0 border-bottom border-danger"
           options={this.state.options}
           series={this.state.series}
           type="radialBar"

@@ -10,7 +10,8 @@ class Clients extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      time: new Date().toLocaleString()
+      time:
+        new Date().toLocaleTimeString() + " " + new Date().toLocaleDateString()
     };
   }
   componentDidMount() {
@@ -21,13 +22,14 @@ class Clients extends Component {
   }
   tick() {
     this.setState({
-      time: new Date().toLocaleString()
+      time:
+        new Date().toLocaleTimeString() + " " + new Date().toLocaleDateString()
     });
   }
   // ?-- Time --------------
-  state = {
-    totalMc: null
-  };
+  // state = {
+  //   totalMc: null
+  // };
 
   static getDerivedStateFromProps(props, state) {
     const { clients } = props;
@@ -60,8 +62,7 @@ class Clients extends Component {
             </div>
             <div className="col-md-6">
               <h5 className="text-right text-secondary ">
-                Date/Time :{" "}
-                <span className="text-primary ">
+                <span className="text-danger ">
                   {/* {parseFloat(totalMc).toFixed(2)} */}
                   {/* {new Date().toLocaleTimeString()} */}
                   {this.state.time}
