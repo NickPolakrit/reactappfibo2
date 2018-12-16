@@ -92,11 +92,7 @@ class AppNavbar extends Component {
                   </a>
                 </li>
                 <li className="nav-item">
-                  <a
-                    href="#!"
-                    className="nav-link"
-                    onClick={this.onLogoutClick}
-                  >
+                  <a href="/" className="nav-link" onClick={this.onLogoutClick}>
                     <i className="fas fa-sign-out-alt fa-fw" />
                     Logout
                   </a>

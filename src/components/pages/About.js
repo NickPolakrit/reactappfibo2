@@ -10,17 +10,41 @@ import profilePee from "../img/profilePee.png";
 import profileMap from "../img/profileMap.png";
 import profileTA from "../img/profileTA.png";
 
+import styled from "styled-components";
+
+const Fontres = styled.h1`
+  html {
+    font-size: 3rem;
+  }
+
+  @include media-breakpoint-up(sm) {
+    html {
+      font-size: 1.2rem;
+    }
+  }
+
+  @include media-breakpoint-up(md) {
+    html {
+      font-size: 1.4rem;
+    }
+  }
+
+  @include media-breakpoint-up(lg) {
+    html {
+      font-size: 3rem;
+    }
+  }
+`;
+
 export default function Landing() {
   return (
     // <Wrapper>
     //   <Title>Hello World, this is my first styled component!</Title>
     // </Wrapper>
     <React.Fragment>
+      <h1 className="text-primary text-center">Developer Team</h1>
       <div className="position-relative overflow-hidden p-3 p-md-5 m-md-3 text-center">
         <div className="col-auto ">
-          <h1 className="display-2 font-weight-normal text-primary">
-            Developer Team
-          </h1>
           <div className="card-group">
             <div className="card">
               <img className="card-img-top" src={profileNick} alt="nick " />
