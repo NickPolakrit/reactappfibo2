@@ -10,31 +10,31 @@ import profilePee from "../img/profilePee.jpg";
 import profileMap from "../img/profileMap.jpg";
 import profileTA from "../img/profileTA.jpg";
 
-import styled from "styled-components";
+// import styled from "styled-components";
 
-const Fontres = styled.h1`
-  html {
-    font-size: 3rem;
-  }
+// const Fontres = styled.h1`
+//   html {
+//     font-size: 3rem;
+//   }
 
-  @include media-breakpoint-up(sm) {
-    html {
-      font-size: 1.2rem;
-    }
-  }
+//   @include media-breakpoint-up(sm) {
+//     html {
+//       font-size: 1.2rem;
+//     }
+//   }
 
-  @include media-breakpoint-up(md) {
-    html {
-      font-size: 1.4rem;
-    }
-  }
+//   @include media-breakpoint-up(md) {
+//     html {
+//       font-size: 1.4rem;
+//     }
+//   }
 
-  @include media-breakpoint-up(lg) {
-    html {
-      font-size: 3rem;
-    }
-  }
-`;
+//   @include media-breakpoint-up(lg) {
+//     html {
+//       font-size: 3rem;
+//     }
+//   }
+// `;
 
 export default function Landing() {
   return (

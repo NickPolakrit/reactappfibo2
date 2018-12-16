@@ -13,7 +13,7 @@ import profileTula from "../img/profileTula.jpg";
 import profilePee from "../img/profilePee.jpg";
 import profileMap from "../img/profileMap.jpg";
 import profileTA from "../img/profileTA.jpg";
-import logofirst from "../img/logofirst.png";
+import logofirst from "../img/logofirst.jpg";
 // Create a <Title> react component that renders an <h1> which is
 // centered, palevioletred and sized at 1.5em
 const Title1 = styled.h1`

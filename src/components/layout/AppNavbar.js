@@ -6,12 +6,12 @@ import { connect } from "react-redux";
 import { firebaseConnect } from "react-redux-firebase";
 import PropTypes from "prop-types";
 import Sflogo from "../layout/sflogo.png";
-import styled from "styled-components";
+// import styled from "styled-components";
 
-const Wrapper = styled.section`
-  padding: 4em;
-  background: #007bff;
-`;
+// const Wrapper = styled.section`
+//   padding: 4em;
+//   background: #007bff;
+// `;
 class AppNavbar extends Component {
   state = {
     isAuthenticated: false

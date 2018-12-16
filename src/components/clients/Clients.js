@@ -31,19 +31,19 @@ class Clients extends Component {
   //   totalMc: null
   // };
 
-  static getDerivedStateFromProps(props, state) {
-    const { clients } = props;
+  // static getDerivedStateFromProps(props, state) {
+  //   const { clients } = props;
 
-    // if (clients) {
-    //   const total = clients.reduce((total, client) => {
-    //     return total + parseFloat(client.OEE.toString()); // ERROR !!!!
-    //   }, 0);
+  //   // if (clients) {
+  //   //   const total = clients.reduce((total, client) => {
+  //   //     return total + parseFloat(client.OEE.toString()); // ERROR !!!!
+  //   //   }, 0);
 
-    //   return { totalMc: total };
-    // }
+  //   //   return { totalMc: total };
+  //   // }
 
-    return null;
-  }
+  //   return null;
+  // }
 
   render() {
     const { clients } = this.props;

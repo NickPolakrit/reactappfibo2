@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { Link } from "react-router-dom";
+// import { Link } from "react-router-dom";
 import PropTypes from "prop-types";
 import { compose } from "redux";
 import { connect } from "react-redux";
@@ -30,7 +30,7 @@ class PopChart extends Component {
   // };
 
   static getDerivedStateFromProps(props, state) {
-    const { clients } = props;
+    // const { clients } = props;
 
     // if (clients) {
     //   const total = clients.reduce((total, client) => {

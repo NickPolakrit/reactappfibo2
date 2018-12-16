@@ -1,8 +1,8 @@
 import React, { Component } from "react";
 import Chart from "react-apexcharts";
 import PropTypes from "prop-types";
-import { connect } from "react-redux";
-import { firestoreConnect } from "react-redux-firebase";
+// import { connect } from "react-redux";
+// import { firestoreConnect } from "react-redux-firebase";
 
 class DashChart extends Component {
   constructor(props) {
@@ -79,7 +79,7 @@ class DashChart extends Component {
   }
 
   render() {
-    const { clients } = this.props;
+    // const { clients } = this.props;
 
     return (
       <React.Fragment>

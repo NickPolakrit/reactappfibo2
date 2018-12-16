@@ -1,11 +1,11 @@
 import React from "react";
-import PopChart from "../clients/PopChart";
+// import PopChart from "../clients/PopChart";
 import PopChart2 from "../clients/PopChart2";
 import PopChart4 from "../clients/PopChart4";
 import PopChart5 from "../clients/PopChart5";
-import PopChart6 from "../clients/PopChart6";
-import PopChart3 from "../clients/PopChart3";
-import DashChart from "../clients/DashChart";
+// import PopChart6 from "../clients/PopChart6";
+// import PopChart3 from "../clients/PopChart3";
+// import DashChart from "../clients/DashChart";
 import DashChart2 from "../clients/DashChart2";
 
 export default function Dashboard() {

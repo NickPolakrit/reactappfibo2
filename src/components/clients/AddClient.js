@@ -11,8 +11,8 @@ class AddClient extends Component {
     Time: "",
     Performance: "",
     Availability: "",
-    Quality: "",
-    OEE: ""
+    Quality: ""
+    // OEE: ""
   };
 
   onSubmit = e => {
@@ -32,16 +32,16 @@ class AddClient extends Component {
     if (newClient.Quality === "") {
       newClient.Quality = 0;
     }
-    if (newClient.OEE === "") {
-      newClient.OEE = parseFloat(
-        (((((parseFloat(newClient.Performance.toString()) / 100) *
-          parseFloat(newClient.Availability.toString())) /
-          100) *
-          parseFloat(newClient.Quality.toString())) /
-          100) *
-          100
-      ).toFixed(2);
-    }
+    // if (newClient.OEE === "") {
+    //   newClient.OEE = parseFloat(
+    //     (((((parseFloat(newClient.Performance.toString()) / 100) *
+    //       parseFloat(newClient.Availability.toString())) /
+    //       100) *
+    //       parseFloat(newClient.Quality.toString())) /
+    //       100) *
+    //       100
+    //   ).toFixed(2);
+    // }
     if (newClient.Time === "") {
       newClient.Time =
         new Date().toLocaleTimeString() + " " + new Date().toLocaleDateString();
