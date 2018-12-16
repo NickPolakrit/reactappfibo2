@@ -13,6 +13,7 @@ import Login from "./components/auth/Login";
 
 import Dashboard from "./components/layout/Dashboard";
 import NotFound from "./components/pages/NotFound";
+import Landing from "./components/pages/Landing";
 
 import { UserIsAuthenticated, UserIsNotAuthenticated } from "./helpers/auth";
 
@@ -54,6 +55,11 @@ class App extends Component {
                   exact
                   path="/login"
                   component={UserIsNotAuthenticated(Login)}
+                />
+                <Route
+                  exact
+                  path="/landing"
+                  component={UserIsNotAuthenticated(Landing)}
                 />
                 <Route component={UserIsAuthenticated(NotFound)} />
               </Switch>
