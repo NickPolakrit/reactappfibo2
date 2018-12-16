@@ -45,11 +45,11 @@ class DashChart extends Component {
       },
       series: [
         {
-          name: "series1",
+          name: "A01",
           data: [31, 40, 28, 51, 42, 109, 100]
         },
         {
-          name: "series2",
+          name: "A02",
           data: [11, 32, 45, 32, 34, 52, 41]
         }
       ]

@@ -21,14 +21,14 @@ class ClientDetails extends Component {
                 Back To Device
               </Link>
             </div>
-            {/* <div className="col-md-6">
+            <div className="col-md-6">
               <div className="btn-group float-right">
                 <Link to={`/client/edit/${client.id}`} className="btn btn-dark">
                   Edit
                 </Link>
                 <button className="btn btn-danger">Delete</button>
               </div>
-            </div> */}
+            </div>
           </div>
           <hr />
           <div className="card shadow-lg p-3 mb-5 bg-white rounded">

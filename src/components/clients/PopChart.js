@@ -52,7 +52,7 @@ class PopChart extends Component {
       return (
         <div>
           {clients.map(client => (
-            <a>{client.Name}</a>
+            <a>{client.Quality}</a>
           ))}
         </div>
       );
