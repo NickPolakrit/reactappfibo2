@@ -3,10 +3,14 @@ import Chart from "react-apexcharts";
 import PropTypes from "prop-types";
 import { connect } from "react-redux";
 import { firestoreConnect } from "react-redux-firebase";
+import { compose } from "redux";
 
 class DashChart extends Component {
   constructor(props) {
     super(props);
+    const newSeries = [];
+    const timeG = [];
+    const { clients } = this.props;
 
     this.state = {
       options: {
@@ -43,22 +47,17 @@ class DashChart extends Component {
           }
         }
       },
-      series: [
-        {
-          name: "A01",
-          data: [31, 40, 28, 51, 42, 109, 100]
-        },
-        {
-          name: "A02",
-          data: [11, 32, 45, 32, 34, 52, 41]
-        }
-      ]
+      series: newSeries
     };
+    this.state.series.map(s => {
+      clients.map(client => {
+        return client.Quality;
+      });
+      newSeries.push({ clients, name: clients.Name });
+    });
   }
 
   render() {
-    const { clients } = this.props;
-
     return (
       <React.Fragment>
         <div className="row">
@@ -81,4 +80,9 @@ DashChart.propTypes = {
   clients: PropTypes.array
 };
 
-export default DashChart;
+export default compose(
+  firestoreConnect([{ collection: "clients", orderBy: "Time" }]),
+  connect((state, props) => ({
+    clients: state.firestore.ordered.clients
+  }))
+)(DashChart);
