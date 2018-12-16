@@ -11,6 +11,7 @@ import profileJob from "../img/profileJob.png";
 import profileTula from "../img/profileTula.png";
 import profilePee from "../img/profilePee.png";
 import profileMap from "../img/profileMap.png";
+import profileTA from "../img/profileTA.png";
 // Create a <Title> react component that renders an <h1> which is
 // centered, palevioletred and sized at 1.5em
 const Title1 = styled.h1`
@@ -61,6 +62,9 @@ export default function Landing() {
             className="img-fluid"
             style={{ width: "1000px", margin: "center-auto", display: "block" }}
           />
+          <a class="btn btn-primary" href="/login" role="button">
+            Login
+          </a>
         </div>
       </div>
       <div className="position-relative overflow-hidden p-3 p-md-5 m-md-3 text-center">
@@ -96,28 +100,28 @@ export default function Landing() {
                 alt="Card image cap"
               />
               <div class="card-body">
-                <h5 class="card-title">Polakrit Malimai</h5>
+                <h5 class="card-title">M POLAKRIT</h5>
                 <p class="card-text text-danger">Full Stack</p>
               </div>
             </div>
             <div class="card">
               <img class="card-img-top" src={profileWin} alt="Card image cap" />
               <div class="card-body">
-                <h5 class="card-title">Nuttanawut S</h5>
+                <h5 class="card-title">S NUTTANAWUT</h5>
                 <p class="card-text text-danger">Back-End</p>
               </div>
             </div>
             <div class="card">
               <img class="card-img-top" src={profileSun} alt="Card image cap" />
               <div class="card-body">
-                <h5 class="card-title">Thanaphoom P</h5>
+                <h5 class="card-title">P THANAPHOOM</h5>
                 <p class="card-text text-danger">Device</p>
               </div>
             </div>
             <div class="card">
               <img class="card-img-top" src={profileFai} alt="Card image cap" />
               <div class="card-body">
-                <h5 class="card-title">Punnat J</h5>
+                <h5 class="card-title">J PUNNAT</h5>
                 <p class="card-text text-danger">ProjectManager</p>
               </div>
             </div>
@@ -127,14 +131,14 @@ export default function Landing() {
             <div class="card">
               <img class="card-img-top" src={profileJob} alt="Card image cap" />
               <div class="card-body">
-                <h5 class="card-title">Tanadol P</h5>
+                <h5 class="card-title">P TANADOL</h5>
                 <p class="card-text text-danger">Device</p>
               </div>
             </div>
             <div class="card">
               <img class="card-img-top" src={profilePee} alt="Card image cap" />
               <div class="card-body">
-                <h5 class="card-title">Peerapan K</h5>
+                <h5 class="card-title">K PEERAPAN</h5>
                 <p class="card-text text-danger">Device</p>
               </div>
             </div>
@@ -145,15 +149,31 @@ export default function Landing() {
                 alt="Card image cap"
               />
               <div class="card-body">
-                <h5 class="card-title">Natdhanai</h5>
+                <h5 class="card-title">W NATDHANAI</h5>
                 <p class="card-text text-danger">Document</p>
               </div>
             </div>
             <div class="card">
               <img class="card-img-top" src={profileMap} alt="Card image cap" />
               <div class="card-body">
-                <h5 class="card-title">Khemtit S</h5>
+                <h5 class="card-title">S KHEMTID</h5>
                 <p class="card-text text-danger">Device</p>
+              </div>
+            </div>
+          </div>
+          <br />
+          <div className="container">
+            <div className="col-md-4 offset-md-4">
+              <div class="card">
+                <img
+                  class="card-img-top"
+                  src={profileTA}
+                  alt="Card image cap"
+                />
+                <div class="card-body">
+                  <h5 class="card-title">S WANNACHAT</h5>
+                  <p class="card-text text-danger">TA</p>
+                </div>
               </div>
             </div>
           </div>

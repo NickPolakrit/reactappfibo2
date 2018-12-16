@@ -48,17 +48,12 @@ class App extends Component {
                 />
                 <Route
                   exact
-                  path="/"
-                  component={UserIsAuthenticated(Dashboard)}
-                />
-                <Route
-                  exact
                   path="/login"
                   component={UserIsNotAuthenticated(Login)}
                 />
                 <Route
                   exact
-                  path="/landing"
+                  path="/"
                   component={UserIsNotAuthenticated(Landing)}
                 />
                 <Route component={UserIsAuthenticated(NotFound)} />
