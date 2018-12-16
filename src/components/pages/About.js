@@ -1,14 +1,14 @@
 import React from "react";
 
-import profileNick from "../img/profileNick.png";
-import profileWin from "../img/profileWin.png";
-import profileSun from "../img/profileSun.png";
-import profileFai from "../img/profileFai.png";
-import profileJob from "../img/profileJob.png";
-import profileTula from "../img/profileTula.png";
-import profilePee from "../img/profilePee.png";
-import profileMap from "../img/profileMap.png";
-import profileTA from "../img/profileTA.png";
+import profileNick from "../img/profileNick.jpg";
+import profileWin from "../img/profileWin.jpg";
+import profileSun from "../img/profileSun.jpg";
+import profileFai from "../img/profileFai.jpg";
+import profileJob from "../img/profileJob.jpg";
+import profileTula from "../img/profileTula.jpg";
+import profilePee from "../img/profilePee.jpg";
+import profileMap from "../img/profileMap.jpg";
+import profileTA from "../img/profileTA.jpg";
 
 import styled from "styled-components";
 

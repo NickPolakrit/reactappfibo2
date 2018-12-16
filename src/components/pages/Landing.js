@@ -2,23 +2,24 @@ import React from "react";
 
 import styled from "styled-components";
 import sfsystemimg1 from "../img/sfsystemimg1.png";
-import sfresponsive01 from "../img/sfresponsive01.png";
-import profileNick from "../img/profileNick.png";
-import profileWin from "../img/profileWin.png";
-import profileSun from "../img/profileSun.png";
-import profileFai from "../img/profileFai.png";
-import profileJob from "../img/profileJob.png";
-import profileTula from "../img/profileTula.png";
-import profilePee from "../img/profilePee.png";
-import profileMap from "../img/profileMap.png";
-import profileTA from "../img/profileTA.png";
+import sfresponsive01 from "../img/sfresponsive01.jpg";
+import Sfrepons02 from "../img/Sfrepons02.jpg";
+import profileNick from "../img/profileNick.jpg";
+import profileWin from "../img/profileWin.jpg";
+import profileSun from "../img/profileSun.jpg";
+import profileFai from "../img/profileFai.jpg";
+import profileJob from "../img/profileJob.jpg";
+import profileTula from "../img/profileTula.jpg";
+import profilePee from "../img/profilePee.jpg";
+import profileMap from "../img/profileMap.jpg";
+import profileTA from "../img/profileTA.jpg";
 import logofirst from "../img/logofirst.png";
 // Create a <Title> react component that renders an <h1> which is
 // centered, palevioletred and sized at 1.5em
 const Title1 = styled.h1`
   font-size: 1.5em;
   text-align: center;
-  color: gray;
+  color: #517299;
 `;
 const TitleIMG = styled.h1`
   .centered {
@@ -30,6 +31,16 @@ const TitleIMG = styled.h1`
   font-size: 3em;
   text-align: center;
   color: #283593;
+`;
+const TitleIMG2 = styled.h1`
+  .bottom-left {
+    position: absolute;
+    bottom: 8px;
+    left: 16px;
+  }
+  font-size: 3em;
+  text-align: bottom-left;
+  color: #1569cd;
 `;
 
 // Create a <Wrapper> react component that renders a <section> with
@@ -92,6 +103,27 @@ export default function Landing() {
             </div>
           </div>
         </TitleIMG>
+      </div>
+      <div className="position-relative overflow-hidden p-3 p-md-5 m-md-3 text-center">
+        <TitleIMG2>
+          <div className="col-auto">
+            <div className="bottom-left">
+              Contact <br />
+              +6695-920-5183
+            </div>
+
+            <img
+              src={Sfrepons02}
+              alt="imgtitle2"
+              className="img-fluid"
+              style={{
+                width: "1000px",
+                margin: "center-auto",
+                display: "block"
+              }}
+            />
+          </div>
+        </TitleIMG2>
       </div>
 
       <div className="position-relative overflow-hidden p-3 p-md-5 m-md-3 text-center">
