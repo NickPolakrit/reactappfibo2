@@ -1,6 +1,9 @@
 import React from "react";
 import PopChart from "../clients/PopChart";
 import PopChart2 from "../clients/PopChart2";
+import PopChart4 from "../clients/PopChart4";
+import PopChart5 from "../clients/PopChart5";
+import PopChart6 from "../clients/PopChart6";
 import PopChart3 from "../clients/PopChart3";
 import DashChart from "../clients/DashChart";
 import DashChart2 from "../clients/DashChart2";
@@ -20,7 +23,18 @@ export default function Dashboard() {
       {/* </div> */}
       {/* <br /> */}
       {/* <PopChart /> */}
-      {/* <PopChart2 /> */}
+
+      <div className="row">
+        <div className="col">
+          <PopChart2 />
+        </div>
+        <div className="col">
+          <PopChart4 />
+        </div>
+        <div className="col">
+          <PopChart5 />
+        </div>
+      </div>
       {/* <DashChart /> */}
       <DashChart2 />
     </div>

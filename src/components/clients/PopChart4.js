@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import Chart from "react-apexcharts";
 
-class PopChart2 extends Component {
+class PopChart4 extends Component {
   constructor(props) {
     super(props);
 
@@ -68,12 +68,12 @@ class PopChart2 extends Component {
         },
         fill: {
           type: "gradient",
-          colors: "#FF4560",
+          colors: "#FF5722",
           gradient: {
             shade: "light",
             type: "horizontal",
             shadeIntensity: 0.5,
-            gradientToColors: ["#00E396"],
+            gradientToColors: ["#FFEB3B"],
             inverseColors: true,
             opacityFrom: 1,
             opacityTo: 1,
@@ -84,7 +84,7 @@ class PopChart2 extends Component {
           lineCap: "round"
         },
         title: {
-          text: "Availability",
+          text: "Performance",
           align: "left",
           margin: 0,
           offsetX: 10,
@@ -98,7 +98,7 @@ class PopChart2 extends Component {
         labels: ["Percent"]
         //------
       },
-      series: [89]
+      series: [64]
     };
   }
 
@@ -106,7 +106,7 @@ class PopChart2 extends Component {
     return (
       <div className="row">
         <Chart
-          className="col-sm shadow-lg mb-3 p-1 bg-white rounded-0 border-bottom border-danger"
+          className="col-sm shadow-lg mb-3 p-1 bg-white rounded-0 border-bottom border-warning"
           options={this.state.options}
           series={this.state.series}
           type="radialBar"
@@ -118,4 +118,4 @@ class PopChart2 extends Component {
   }
 }
 
-export default PopChart2;
+export default PopChart4;

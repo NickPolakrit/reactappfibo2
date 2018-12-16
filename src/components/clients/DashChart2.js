@@ -1,278 +1,106 @@
 import React, { Component } from "react";
 import Chart from "react-apexcharts";
+import PropTypes from "prop-types";
+import { connect } from "react-redux";
+import { firestoreConnect } from "react-redux-firebase";
 
-class App extends Component {
+class DashChart extends Component {
   constructor(props) {
     super(props);
 
-    this.updateCharts = this.updateCharts.bind(this);
-
     this.state = {
-      optionsMixedChart: {
+      options: {
         chart: {
-          id: "basic-bar",
-          toolbar: {
-            show: false
-          }
-        },
-        plotOptions: {
-          bar: {
-            columnWidth: "50%",
-            endingShape: "arrow"
-          }
-        },
-        stroke: {
-          width: [4, 0, 0]
-        },
-        xaxis: {
-          categories: ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat", "Sun"]
-        },
-        markers: {
-          size: 6,
-          strokeWidth: 3,
-          fillOpacity: 0,
-          strokeOpacity: 0,
-          hover: {
-            size: 8
-          }
-        },
-        yaxis: {
-          tickAmount: 5,
-          min: 0,
-          max: 100
-        }
-      },
-      seriesMixedChart: [
-        {
-          name: "series-1",
-          type: "line",
-          data: [30, 40, 25, 50, 49, 21, 70, 51]
-        },
-        {
-          name: "series-2",
-          type: "column",
-          data: [23, 12, 54, 61, 32, 56, 81, 19]
-        },
-        {
-          name: "series-3",
-          type: "column",
-          data: [62, 12, 45, 55, 76, 41, 23, 43]
-        }
-      ],
-      optionsRadial: {
-        plotOptions: {
-          radialBar: {
-            startAngle: -135,
-            endAngle: 225,
-            hollow: {
-              margin: 0,
-              size: "70%",
-              background: "#fff",
-              image: undefined,
-              imageOffsetX: 0,
-              imageOffsetY: 0,
-              position: "front",
-              dropShadow: {
-                enabled: true,
-                top: 3,
-                left: 0,
-                blur: 4,
-                opacity: 0.24
-              }
-            },
-            track: {
-              background: "#fff",
-              strokeWidth: "67%",
-              margin: 0, // margin is in pixels
-              dropShadow: {
-                enabled: true,
-                top: -3,
-                left: 0,
-                blur: 4,
-                opacity: 0.35
-              }
-            },
-
-            dataLabels: {
-              showOn: "always",
-              name: {
-                offsetY: -20,
-                show: true,
-                color: "#888",
-                fontSize: "13px"
-              },
-              value: {
-                formatter: function(val) {
-                  return val;
-                },
-                color: "#111",
-                fontSize: "30px",
-                show: true
-              }
-            }
-          }
-        },
-        fill: {
-          type: "gradient",
-          gradient: {
-            shade: "dark",
-            type: "horizontal",
-            shadeIntensity: 0.5,
-            gradientToColors: ["#ABE5A1"],
-            inverseColors: true,
-            opacityFrom: 1,
-            opacityTo: 1,
-            stops: [0, 100]
-          }
-        },
-        stroke: {
-          lineCap: "round"
-        },
-        labels: ["Percent"]
-      },
-      seriesRadial: [76],
-      optionsBar: {
-        chart: {
-          stacked: true,
-          stackType: "100%",
-          toolbar: {
-            show: false
-          }
-        },
-        plotOptions: {
-          bar: {
-            horizontal: true
+          background: "#fff",
+          foreColor: "#373d3f",
+          sparkline: {
+            enabled: false
           }
         },
         dataLabels: {
-          dropShadow: {
-            enabled: true
-          }
+          enabled: false
         },
         stroke: {
-          width: 0
+          curve: "smooth"
         },
-        xaxis: {
-          categories: ["Fav Color"],
-          labels: {
-            show: false
-          },
-          axisBorder: {
-            show: false
-          },
-          axisTicks: {
-            show: false
-          }
-        },
-        fill: {
-          opacity: 1,
-          type: "gradient",
-          gradient: {
-            shade: "dark",
-            type: "vertical",
-            shadeIntensity: 0.35,
-            gradientToColors: undefined,
-            inverseColors: false,
-            opacityFrom: 0.85,
-            opacityTo: 0.85,
-            stops: [90, 0, 100]
+        title: {
+          text: "OEE Realtime",
+          align: "left",
+          margin: 0,
+          offsetX: 10,
+          offsetY: 10,
+          floating: false,
+          style: {
+            fontSize: "16px",
+            color: "#263238"
           }
         },
 
-        legend: {
-          position: "bottom",
-          horizontalAlign: "right"
+        //------
+        xaxis: {
+          // labels: {
+          //   format: "D/T"
+          // },
+          type: "datetime",
+          categories: [
+            "2018/09/19T00:00:00",
+            "2018/09/19T01:30:00",
+            "2018/09/19T02:30:00",
+            "2018/09/19T03:30:00",
+            "2018/09/19T04:30:00",
+            "2018/09/19T05:30:00",
+            "2018/09/19T06:30:00"
+          ]
+        },
+        yaxis: {
+          max: 100
+        },
+        tooltip: {
+          x: {
+            format: "dd/MM/yy HH:mm:ss"
+          }
         }
       },
-      seriesBar: [
+      series: [
         {
-          name: "blue",
-          data: [32]
+          name: "A01",
+          data: [31, 40, 28, 51, 42, 100, 100]
         },
         {
-          name: "green",
-          data: [41]
+          name: "A02",
+          data: [11, 32, 45, 32, 34, 52, 41]
         },
         {
-          name: "yellow",
-          data: [12]
-        },
-        {
-          name: "red",
-          data: [65]
+          name: "A03",
+          data: [9, 39, 33, 69, 70, 50, 75]
         }
       ]
     };
   }
 
-  updateCharts() {
-    const max = 90;
-    const min = 30;
-    const newMixedSeries = [];
-    const newBarSeries = [];
-
-    this.state.seriesMixedChart.map(s => {
-      const data = s.data.map(() => {
-        return Math.floor(Math.random() * (max - min + 1)) + min;
-      });
-      newMixedSeries.push({ data: data, type: s.type });
-    });
-
-    this.state.seriesBar.map(s => {
-      const data = s.data.map(() => {
-        return Math.floor(Math.random() * (180 - min + 1)) + min;
-      });
-      newBarSeries.push({ data, name: s.name });
-    });
-
-    this.setState({
-      seriesMixedChart: newMixedSeries,
-      seriesBar: newBarSeries,
-      seriesRadial: [Math.floor(Math.random() * (90 - 50 + 1)) + 50]
-    });
-  }
-
   render() {
+    const { clients } = this.props;
+
     return (
-      <div className="app">
+      <React.Fragment>
         <div className="row">
-          <div className="col mixed-chart">
-            <Chart
-              options={this.state.optionsMixedChart}
-              series={this.state.seriesMixedChart}
-              type="line"
-              width="500"
-            />
-          </div>
-
-          <div className="col radial-chart">
-            <Chart
-              options={this.state.optionsRadial}
-              series={this.state.seriesRadial}
-              type="radialBar"
-              width="280"
-            />
-          </div>
+          <Chart
+            className="col shadow-lg p-3 mb-5 bg-white rounded border border-success"
+            options={this.state.options}
+            series={this.state.series}
+            type="area"
+            width="100%"
+            height="450"
+          />
         </div>
-
-        <div className="row">
-          <div className="col percentage-chart">
-            <Chart
-              options={this.state.optionsBar}
-              height={140}
-              series={this.state.seriesBar}
-              type="bar"
-              width={500}
-            />
-          </div>
-
-          <p className="col">
-            <button onClick={this.updateCharts}>Update!</button>
-          </p>
-        </div>
-      </div>
+      </React.Fragment>
     );
   }
 }
 
-export default App;
+DashChart.propTypes = {
+  firestore: PropTypes.object.isRequired,
+  clients: PropTypes.array
+};
+
+export default DashChart;

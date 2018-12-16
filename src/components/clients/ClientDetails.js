@@ -26,7 +26,7 @@ class ClientDetails extends Component {
                 {/* <Link to={`/client/edit/${client.id}`} className="btn btn-dark">
                   Edit
                 </Link> */}
-                <button className="btn btn-danger">Delete</button>
+                {/* <button className="btn btn-danger">Delete</button> */}
               </div>
             </div>
           </div>
