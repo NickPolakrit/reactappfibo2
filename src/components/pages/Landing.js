@@ -17,7 +17,7 @@ import logofirst from "../img/logofirst.jpg";
 // Create a <Title> react component that renders an <h1> which is
 // centered, palevioletred and sized at 1.5em
 const Title1 = styled.h1`
-  font-size: 1.5em;
+  font-size: 2vw;
   text-align: center;
   color: #517299;
 `;
@@ -28,7 +28,7 @@ const TitleIMG = styled.h1`
     left: 50%;
     transform: translate(-50%, -50%);
   }
-  font-size: 3em;
+  font-size: 4vw;
   text-align: center;
   color: #283593;
 `;
@@ -38,7 +38,7 @@ const TitleIMG2 = styled.h1`
     bottom: 8px;
     left: 16px;
   }
-  font-size: 3em;
+  font-size: 4vw;
   text-align: bottom-left;
   color: #1569cd;
 `;
@@ -107,7 +107,7 @@ export default function Landing() {
       <div className="position-relative overflow-hidden p-3 p-md-5 m-md-3 text-center">
         <TitleIMG2>
           <div className="col-auto">
-            <div className="bottom-left">
+            <div className="text-xl-left bottom-left">
               Contact <br />
               +6695-920-5183
             </div>
@@ -128,9 +128,7 @@ export default function Landing() {
 
       <div className="position-relative overflow-hidden p-3 p-md-5 m-md-3 text-center">
         <div className="col-auto ">
-          <h1 className="display-2 font-weight-normal text-primary">
-            About Us
-          </h1>
+          <h1 className="centered text-primary">About Us</h1>
           <div class="card-group">
             <div class="card">
               <img class="card-img-top" src={profileNick} alt="nick" />
