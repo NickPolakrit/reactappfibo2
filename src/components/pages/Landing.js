@@ -32,15 +32,25 @@ const TitleIMG = styled.h1`
   text-align: center;
   color: #283593;
 `;
-const TitleIMG2 = styled.h1`
+// const TitleIMG2 = styled.h1`
+//   .bottom-left {
+//     position: absolute;
+//     bottom: 8px;
+//     left: 16px;
+//   }
+//   font-size: 4vw;
+//   text-align: bottom-left;
+//   color: #1569cd;
+// `;
+const TitleIMG3 = styled.h3`
   .bottom-left {
     position: absolute;
     bottom: 8px;
     left: 16px;
   }
-  font-size: 4vw;
+  font-size: 2vw;
   text-align: bottom-left;
-  color: #1569cd;
+  color: #ff5722;
 `;
 
 // Create a <Wrapper> react component that renders a <section> with
@@ -101,13 +111,13 @@ export default function Landing() {
         </TitleIMG>
       </div>
       <div className="position-relative overflow-hidden p-3 p-md-5 m-md-3 text-center">
-        <TitleIMG2>
+        <TitleIMG3>
           <div className="col-auto">
             <div className="text-xl-left bottom-left">
-              Are you need to have a smartest system for your Factory.
-              <div className="text-secondary">
+              Are you need to have a smartest system for your Factory. <hr />
+              <div className="text-dark">
                 Contact <br />
-                +6695-920-5183
+                <div className="text-info">+6695-920-5183</div>
               </div>
             </div>
 
@@ -122,7 +132,14 @@ export default function Landing() {
               }}
             />
           </div>
-        </TitleIMG2>
+          {/* <div className="text-sm-left bottom-left">
+            Are you need to have a smartest system for your Factory.
+            <div className="text-success">
+              Contact <br />
+              +6695-920-5183
+            </div>
+          </div> */}
+        </TitleIMG3>
       </div>
 
       <div className="position-relative overflow-hidden p-3 p-md-5 m-md-3 text-center">
