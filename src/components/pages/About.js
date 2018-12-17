@@ -10,8 +10,12 @@ import profilePee from "../img/profilePee.jpg";
 import profileMap from "../img/profileMap.jpg";
 import profileTA from "../img/profileTA.jpg";
 
-// import styled from "styled-components";
+import styled from "styled-components";
 
+const TitleCard = styled.h3`
+  font-size: 1.5vw;
+  color: #17202a;
+`;
 // const Fontres = styled.h1`
 //   html {
 //     font-size: 3rem;
@@ -49,28 +53,28 @@ export default function Landing() {
             <div className="card">
               <img className="card-img-top" src={profileNick} alt="nick " />
               <div className="card-body">
-                <h5 className="card-title">M POLAKRIT</h5>
+                <TitleCard className="card-title">M POLAKRIT</TitleCard>
                 <p className="card-text text-danger">Full Stack</p>
               </div>
             </div>
             <div className="card">
               <img className="card-img-top" src={profileWin} alt="win" />
               <div className="card-body">
-                <h5 className="card-title">S NUTTANAWUT</h5>
+                <TitleCard className="card-title">S NUTTANAWUT</TitleCard>
                 <p className="card-text text-danger">Back-End</p>
               </div>
             </div>
             <div className="card">
               <img className="card-img-top" src={profileSun} alt="sun" />
               <div className="card-body">
-                <h5 className="card-title">P THANAPHOOM</h5>
+                <TitleCard className="card-title">P THANAPHOOM</TitleCard>
                 <p className="card-text text-danger">Device</p>
               </div>
             </div>
             <div className="card">
               <img className="card-img-top" src={profileFai} alt="fai" />
               <div className="card-body">
-                <h5 className="card-title">J PUNNAT</h5>
+                <TitleCard className="card-title">J PUNNAT</TitleCard>
                 <p className="card-text text-danger">ProjectManager</p>
               </div>
             </div>
@@ -80,28 +84,28 @@ export default function Landing() {
             <div className="card">
               <img className="card-img-top" src={profileJob} alt="job" />
               <div className="card-body">
-                <h5 className="card-title">P TANADOL</h5>
+                <TitleCard className="card-title">P TANADOL</TitleCard>
                 <p className="card-text text-danger">Device</p>
               </div>
             </div>
             <div className="card">
               <img className="card-img-top" src={profilePee} alt="pee" />
               <div className="card-body">
-                <h5 className="card-title">K PEERAPAN</h5>
+                <TitleCard className="card-title">K PEERAPAN</TitleCard>
                 <p className="card-text text-danger">Device</p>
               </div>
             </div>
             <div className="card">
               <img className="card-img-top" src={profileTula} alt="tula" />
               <div className="card-body">
-                <h5 className="card-title">W NATDHANAI</h5>
+                <TitleCard className="card-title">W NATDHANAI</TitleCard>
                 <p className="card-text text-danger">Document</p>
               </div>
             </div>
             <div className="card">
               <img className="card-img-top" src={profileMap} alt="map" />
               <div className="card-body">
-                <h5 className="card-title">S KHEMTID</h5>
+                <TitleCard className="card-title">S KHEMTID</TitleCard>
                 <p className="card-text text-danger">Device</p>
               </div>
             </div>
@@ -112,7 +116,7 @@ export default function Landing() {
               <div className="card">
                 <img className="card-img-top" src={profileTA} alt="ta" />
                 <div className="card-body">
-                  <h5 className="card-title">S WANNACHAT</h5>
+                  <TitleCard className="card-title">S WANNACHAT</TitleCard>
                   <p className="card-text text-danger">TA</p>
                 </div>
               </div>

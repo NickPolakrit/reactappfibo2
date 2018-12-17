@@ -1,10 +1,12 @@
 import React from "react";
 import Clients from "../clients/Clients";
 import Sidebar from "./Sidebar";
+import ScrollUpButton from "react-scroll-up-button";
 
 export default function Device() {
   return (
     <div className="row">
+      <ScrollUpButton />
       <div className="col-md-10">
         <Clients />
       </div>

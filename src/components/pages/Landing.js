@@ -52,6 +52,10 @@ const TitleIMG3 = styled.h3`
   text-align: bottom-left;
   color: #ff5722;
 `;
+const TitleCard = styled.h3`
+  font-size: 1.5vw;
+  color: #17202a;
+`;
 
 // Create a <Wrapper> react component that renders a <section> with
 // some padding and a papayawhip background
@@ -149,28 +153,28 @@ export default function Landing() {
             <div class="card">
               <img class="card-img-top" src={profileNick} alt="nick" />
               <div class="card-body">
-                <h5 class="card-title">M POLAKRIT</h5>
+                <TitleCard class="card-title">M POLAKRIT</TitleCard>
                 <p class="card-text text-danger">Full Stack</p>
               </div>
             </div>
             <div class="card">
               <img class="card-img-top" src={profileWin} alt="win" />
               <div class="card-body">
-                <h5 class="card-title">S NUTTANAWUT</h5>
+                <TitleCard class="card-title">S NUTTANAWUT</TitleCard>
                 <p class="card-text text-danger">Back-End</p>
               </div>
             </div>
             <div class="card">
               <img class="card-img-top" src={profileSun} alt="sun" />
               <div class="card-body">
-                <h5 class="card-title">P THANAPHOOM</h5>
+                <TitleCard class="card-title">P THANAPHOOM</TitleCard>
                 <p class="card-text text-danger">Device</p>
               </div>
             </div>
             <div class="card">
               <img class="card-img-top" src={profileFai} alt="fai" />
               <div class="card-body">
-                <h5 class="card-title">J PUNNAT</h5>
+                <TitleCard class="card-title">J PUNNAT</TitleCard>
                 <p class="card-text text-danger">ProjectManager</p>
               </div>
             </div>
@@ -180,28 +184,28 @@ export default function Landing() {
             <div class="card">
               <img class="card-img-top" src={profileJob} alt="job" />
               <div class="card-body">
-                <h5 class="card-title">P TANADOL</h5>
+                <TitleCard class="card-title">P TANADOL</TitleCard>
                 <p class="card-text text-danger">Device</p>
               </div>
             </div>
             <div class="card">
               <img class="card-img-top" src={profilePee} alt="pee" />
               <div class="card-body">
-                <h5 class="card-title">K PEERAPAN</h5>
+                <TitleCard class="card-title">K PEERAPAN</TitleCard>
                 <p class="card-text text-danger">Device</p>
               </div>
             </div>
             <div class="card">
               <img class="card-img-top" src={profileTula} alt="tula" />
               <div class="card-body">
-                <h5 class="card-title">W NATDHANAI</h5>
+                <TitleCard class="card-title">W NATDHANAI</TitleCard>
                 <p class="card-text text-danger">Document</p>
               </div>
             </div>
             <div class="card">
               <img class="card-img-top" src={profileMap} alt="map" />
               <div class="card-body">
-                <h5 class="card-title">S KHEMTID</h5>
+                <TitleCard class="card-title">S KHEMTID</TitleCard>
                 <p class="card-text text-danger">Device</p>
               </div>
             </div>
@@ -212,7 +216,7 @@ export default function Landing() {
               <div class="card">
                 <img class="card-img-top" src={profileTA} alt="ta" />
                 <div class="card-body">
-                  <h5 class="card-title">S WANNACHAT</h5>
+                  <TitleCard class="card-title">S WANNACHAT</TitleCard>
                   <p class="card-text text-danger">TA</p>
                 </div>
               </div>
