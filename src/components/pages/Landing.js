@@ -76,11 +76,7 @@ export default function Landing() {
             className="img-fluid"
             style={{ width: "1000px", margin: "center-auto", display: "block" }}
           />
-          <a
-            class="btn btn-outline-primary btn-lg "
-            href="/login"
-            role="button"
-          >
+          <a class="btn btn-danger btn-lg " href="/login" role="button">
             Login
           </a>
         </div>
@@ -108,8 +104,11 @@ export default function Landing() {
         <TitleIMG2>
           <div className="col-auto">
             <div className="text-xl-left bottom-left">
-              Contact <br />
-              +6695-920-5183
+              Are you need to have a smartest system for your Factory.
+              <div className="text-secondary">
+                Contact <br />
+                +6695-920-5183
+              </div>
             </div>
 
             <img
