@@ -40,4 +40,6 @@ import React, { Component } from "react";
 https://firestore.googleapis.com/v1beta1/projects/sfsystem-d506e/databases/(default)/documents/clients
 ```
 
+![Screenshot](https://github.com/NickPolakrit/reactappfibo2/blob/master/sfsystem.png)
+
 
